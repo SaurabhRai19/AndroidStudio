@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="250dp"
+    android:layout_height="300dp"
+    android:layout_marginLeft="80dp"
+    android:layout_marginTop="150dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/ettext1"
+        android:layout_width="247dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="73dp" />
+
+    <EditText
+        android:id="@+id/ettext2"
+        android:layout_width="245dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/ettext1"
+        app:layout_constraintStart_toStartOf="@+id/ettext1"
+        tools:layout_editor_absoluteY="130dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/ettext2"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="@+id/ettext2"
+        tools:layout_editor_absoluteY="192dp" />
+
+    <Button
+        android:id="@+id/btnsub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/ettext2"
+        tools:layout_editor_absoluteY="248dp" />
+
+    <Button
+        android:id="@+id/btnmmultiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        app:layout_constraintEnd_toEndOf="@+id/btnadd"
+        app:layout_constraintStart_toStartOf="@+id/btnadd"
+        tools:layout_editor_absoluteY="315dp" />
+
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/ettext2"
+        app:layout_constraintTop_toBottomOf="@+id/result" />
+
+    <Button
+        android:id="@+id/btndivide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="@+id/btnsub"
+        app:layout_constraintStart_toStartOf="@+id/btnsub"
+        tools:layout_editor_absoluteY="324dp" />
+
+</LinearLayout>
